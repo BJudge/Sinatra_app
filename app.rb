@@ -1,12 +1,9 @@
 require 'sinatra'
 
-
-set :session_secret, 'super secret'
-
 get '/' do
-  "The Judge"
+  "The Judge Webserver"
 end
 
 get '/secret' do
- "B Richard"
+  "yep, you've made it to the secret route"
 end
