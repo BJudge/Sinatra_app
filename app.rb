@@ -1,9 +1,15 @@
-require 'sinatra'
+require 'sinatra/base'
 
-get '/' do
-  "The Judge Webserver"
-end
+class Webserver < Sinatra::Base
+  get '/' do
+    "The Judge Webserver"
+  end
 
-get '/secret' do
-  "yep, you've made it to the secret route"
+  get '/secret' do
+    "this is not the secret route you're looking for"
+  end
+
+  get '/cat' do
+    
+  end
 end
